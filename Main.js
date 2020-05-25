@@ -2,7 +2,7 @@ var SnapCount = 0;
 
 function Increment(id){
 	Image = document.getElementById("Button");
-	Image.src = "../Images/ButtonB.png";
+	Image.src = "/static/ButtonB.png";
 	setTimeout("Reset()",100);
 	console.log(id);
 	SnapCount = SnapCount + 1;
