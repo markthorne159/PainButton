@@ -9,7 +9,7 @@ class SButton():
     
     def Create(self):
         ButtonApp = Flask(__name__)
-        port = 9999#int(os.environ["PORT"])
+        port = int(os.environ["PORT"])
         
         @ButtonApp.route('/',methods=['GET'])
         def Start():
@@ -19,10 +19,10 @@ class SButton():
         @ButtonApp.route("/inc",methods=["Post"])
         def Increment():
             self.Counter += 1
-            print "Counter at: %d" % self.Counter
+            print ("Counter at: %d" % self.Counter)
             return render_template("index.html")
 
-        ButtonApp.run()
+        ButtonApp.run(port=port,host="0.0.0.0")
 
     
 
