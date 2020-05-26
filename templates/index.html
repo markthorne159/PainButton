@@ -37,9 +37,12 @@
  S.load();
  
  function Sound(){
-	S.play();
-	console.log("Sound played!");
-	Stop();
+ console.log("Played?");
+ var audio = new Audio("/static/Click.mp3");
+ audio.play();
+	//S.play();
+	//console.log("Sound played!");
+	//Stop();
 }
 
 function Stop(){
