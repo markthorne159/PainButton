@@ -21,9 +21,11 @@ class SButton():
             self.Counter += 1
             print ("Counter at: %d" % self.Counter)
 
-            with open("Snaps.txt","w") as f:
-                f.write("Snaps:%d" % self.Counter)
-                f.close()
+            f = open("Snaps.txt","w")
+            f.write("Snaps:%d" % self.Counter)
+            f.close()
+            print("Snaps written!")
+            
             return render_template("index.html")
 
         ButtonApp.run(port=port,host="0.0.0.0")
