@@ -15,3 +15,8 @@ function Reset(){
 	Image = document.getElementById("Button");
 	Image.src = "../Images/ButtonA.png";
 }
+
+function Sound(){
+	var S = document.getElementById("myAudio");
+	S.play();
+}
