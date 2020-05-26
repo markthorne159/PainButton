@@ -10,7 +10,9 @@
 
 <form action = "inc" method = "POST">
 
-<input type="image" src="/static/ButtonA.png" onclick="Sound()" id ="Button" width="256" height="256">
+<a onclick = "Sound()">
+<input id = "sound" type="image" src="/static/ButtonA.png" onclick="Sound()" id ="Button" width="256" height="256">
+</a>
 
 <audio id="myAudio">
   <source src="static/Click.mp3" type="audio/mpeg">
@@ -32,7 +34,12 @@
 
 
 
+<script>
+var Box = document.getElementById("sound");
 
+Box.addEventListener"click",function(event){
+
+</script>
 
 </body>
 </html>
