@@ -22,13 +22,19 @@
 
  </form>
  
- <script src = "/static/Main.js"></script>
+ <script src = "static/Main.js"></script>
  
  <script>
+ 
+ function ChangeImage(){
+ IMG = document.getElementById("Button");
+ IMG.src = "/static/ButtonB.png";
+ }
  console.log("This loaded!!");
  
  var S = document.getElementById("myAudio");
  S.autoplay = false;
+ S.load();
  
  function Sound(){
 	S.play();
@@ -38,11 +44,13 @@
 
 function Stop(){
 S.currentTime = 0;
+S.load();
 }
  </script>
  
  <script>
  $("#Button").click(function(event){
+ ChangeImage();
  Sound();
  });
  </script>
