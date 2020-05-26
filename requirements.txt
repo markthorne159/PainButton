@@ -1,1 +1,2 @@
 Flask==1.1.1
+playsound==1.2.2
