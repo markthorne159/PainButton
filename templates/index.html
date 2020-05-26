@@ -28,10 +28,12 @@
  console.log("This loaded!!");
  
  var S = document.getElementById("myAudio");
+ S.autoplay = false;
  
  function Sound(){
 	S.play();
 	console.log("Sound played!");
+	setTimeout(Stop,500);
 }
  </script>
  
