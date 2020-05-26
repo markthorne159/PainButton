@@ -15,7 +15,7 @@ class SButton():
             print ("Button loaded!")
             return render_template("index.html")
 
-        @ButtonApp.route("/inc",methods=["Post"])
+        @ButtonApp.route("/inc",methods=["POST"])
         def Increment():
 
             print("Sound played!")
