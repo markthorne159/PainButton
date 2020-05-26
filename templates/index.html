@@ -25,6 +25,16 @@
  <script src = "/static/Main.js"></script>
  
  <script>
+ console.log("This loaded!!");
+ 
+ var S = document.getElementById("myAudio");
+ 
+ function Sound(){
+	S.play();
+}
+ </script>
+ 
+ <script>
  $("#Button").click(function(event){
  Sound();
  });
