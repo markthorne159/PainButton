@@ -33,7 +33,11 @@
  function Sound(){
 	S.play();
 	console.log("Sound played!");
-	setTimeout(Stop,500);
+	Stop();
+}
+
+function Stop(){
+S.currentTime = 0;
 }
  </script>
  
