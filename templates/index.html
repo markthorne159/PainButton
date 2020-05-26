@@ -10,9 +10,7 @@
 
 <form action = "inc" method = "POST">
 
-<a onclick = "Sound()">
-<input id = "sound" type="image" src="/static/ButtonA.png" onclick="Sound()" id ="Button" width="256" height="256">
-</a>
+<input id = "sound" type="image" src="/static/ButtonA.png" onsubmit="Sound()" id ="Button" width="256" height="256">
 
 <audio id="myAudio">
   <source src="static/Click.mp3" type="audio/mpeg">
@@ -24,22 +22,6 @@
  <canvas id="myCanvas" width="200" height="100" style="border:5px solid  #e6e6e6;"></canvas>
 
  </form>
-
-
-
-
-
-
-
-
-
-
-<script>
-var Box = document.getElementById("sound");
-
-Box.addEventListener"click",function(event){
-
-</script>
 
 </body>
 </html>
