@@ -1,5 +1,7 @@
 var SnapCount = 0;
 
+var S = document.getElementById("myAudio");
+
 function Increment(id){
 	Image = document.getElementById("Button");
 	Image.src = "/static/ButtonB.png";
@@ -17,6 +19,5 @@ function Reset(){
 }
 
 function Sound(){
-	var S = document.getElementById("myAudio");
 	S.play();
 }

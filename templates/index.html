@@ -1,7 +1,6 @@
 <html>
 <head>
  <link rel="stylesheet" href="static/Main.css"> 
- <script src = "static/Main.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body bgcolor="#ffccff">
@@ -10,7 +9,7 @@
 
 <form action = "inc" method = "POST">
 
-<input id = "sound" type="image" src="/static/ButtonA.png" onsubmit="Sound()" id ="Button" width="256" height="256">
+<input id = "Button" type="image" src="/static/ButtonA.png" onsubmit="Sound()" id ="Button" width="256" height="256">
 
 <audio id="myAudio">
   <source src="static/Click.mp3" type="audio/mpeg">
@@ -22,6 +21,8 @@
  <canvas id="myCanvas" width="200" height="100" style="border:5px solid  #e6e6e6;"></canvas>
 
  </form>
+ 
+ <script src = "static/Main.js"></script>
 
 </body>
 </html>
