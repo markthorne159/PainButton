@@ -20,7 +20,10 @@ class SButton():
         def Increment():
             self.Counter += 1
             print ("Counter at: %d" % self.Counter)
-            return render_template("index.html")
+
+            with open("Snaps.txt","w") as f:
+                f.write("Snaps:%d" % self.Counter)
+            #return render_template("index.html")
 
         ButtonApp.run(port=port,host="0.0.0.0")
 
