@@ -27,7 +27,8 @@ class SButton():
             f.close()
             print("Snaps written!")
             
-            return render_template("index.html")
+            Start()
+            #return render_template("index.html")
 
         ButtonApp.run(port=port,host="0.0.0.0")
 
