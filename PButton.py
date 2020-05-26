@@ -20,7 +20,7 @@ class SButton():
         @ButtonApp.route("/inc",methods=["Post"])
         def Increment():
 
-            playsound('static\Click.mp3')
+            playsound('static/Click.mp3')
             print("Sound played!")
             self.Counter += 1
             print ("Counter at: %d" % self.Counter)
